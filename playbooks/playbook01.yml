@@ -1,18 +1,18 @@
 ---
 - name: play1
   become: yes
-  hosts: dev
+  hosts: Dev
   tasks:
          - name: execute command Date
            command: date
          - name: copy file
            copy:
-             src: /home/ansible/dev.txt
+             src: /home/ansible/Dev.txt
              dest: /home/ansible
 
 - name: play2
   become: yes
-  hosts: prod
+  hosts: Prod
   tasks:
          - name: shell task
            shell: echo "install mysql"
