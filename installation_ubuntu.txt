@@ -35,7 +35,7 @@ STEP4- Form controller server verify that ssh connection between controller and 
 ssh <private IP of host>
 
 STEP5- update inventory file , create a host group and add host IPs to the group
-On host server     cd/etc/ansible/
+On host server     while being in this directory (ansible@ip-172-31-47-6:~/.ssh$)   cd /etc/ansible/
 Give : ll
 then go inside : ansible.cfg
 Copy : (ansible-config init --disabled > ansible.cfg )  as per your.
